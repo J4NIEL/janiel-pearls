@@ -236,7 +236,6 @@ RegisterNetEvent("janiel-pearls:client:ingredientStore", function()
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "pearls", Config.Items)
 end)
 
--- Blip ekleme işlemi
 CreateThread(function()
     local blip = AddBlipForCoord(-1825.39, -1193.69, 26.49) 
 
@@ -299,6 +298,7 @@ RegisterNetEvent('pearls:client:TableStash', function(data)
     })
     TriggerEvent("inventory:client:SetCurrentStash", stashName)
 end)
+
 
 
 
